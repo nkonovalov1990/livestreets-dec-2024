@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no"
+        />
+
+        <title></title>
+        <meta name="title" content="" />
+        <meta name="description" content="" />
+
+        <!-- <link rel="icon" href="/favicon.ico" sizes="any"> -->
+        <link rel="stylesheet" href="./style.css?2" />
+        <!-- <link rel="preload" href="./images/current.plan.jpg" as="image">   -->
+        <!-- <link rel="preload" href="./images/with-bike-line.plan.jpg" as="image"> -->
+        <!-- <link rel="manifest" href="/manifest.json"> -->
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <!-- <meta property="og:image" content="./images/_thumbnail.jpg"> -->
+
+        <!--<meta property="twitter:card" content="summary_large_image"> -->
+        <meta property="twitter:title" content="" />
+        <meta property="twitter:description" content="" />
+        <!-- <meta property="twitter:image" content="./images/_thumbnail.jpg"> -->
+    </head>
+
+    <body>
+        <div class="loader-text" data-loader-text>Загрузка карты...</div>
+        <div class="loader" data-loader>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="map" data-map></div>
+
+        <div class="map-switcher" data-switcher>
+            <div class="map-toggle">
+                <button
+                    class="map-toggle__button map-toggle__button_active"
+                    data-plan-switcher="Предложения"
+                >
+                    Предложения
+                </button>
+                <button
+                    class="map-toggle__button"
+                    data-plan-switcher="Исходный проект"
+                >
+                    Исходный проект
+                </button>
+            </div>
+
+            <select class="map-select" data-plan-select style="display: none">
+                <option disabled>Выберите план</option>
+            </select>
+        </div>
+
+        <aside class="legend" data-legend style="display: none">
+            <div class="legend__menu" data-legend-menu></div>
+            <button class="legend__button" data-legend-button>Легенда</button>
+        </aside>
+
+        <div class="zoom">
+            <button
+                class="zoom__button zoom__button_plus"
+                title="Увеличить масштаб (+)"
+                data-plan-zoom-in
+            >
+                &#43;
+            </button>
+            <button
+                class="zoom__button zoom__button_minus"
+                title="Уменьшить масштаб (-)"
+                data-plan-zoom-out
+            >
+                &#8722;
+            </button>
+        </div>
+
+        <!-- <a href="/genplan" class="contact-button" target="_blank" tabindex="0">Оставить предложение</a> -->
+        <!-- <a href="https://github.com/a-chabin/ekaterinburg-plan" class="about-link" target="_blank" tabindex="0">О разработчиках карты на GitHub</a> -->
+
+        <link rel="stylesheet" href="./assets/viewer.min.css" />
+        <script src="./assets/viewer.min.js"></script>
+        <script src="./data.js?2"></script>
+        <script src="./script.js?2"></script>
+    </body>
+</html>
