@@ -1,6 +1,6 @@
 const PLANS = [
   {
-    title: "Предложения 2024",
+    title: "Предложения",
     map: "project.jpg",
     old: true,
     default: true
