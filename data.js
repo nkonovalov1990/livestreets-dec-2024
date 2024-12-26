@@ -6,7 +6,7 @@ const PLANS = [
     default: true
   },
   {
-    title: "Исходный проект",
+    title: "Исходная ситуация",
     map: "plan.jpg",
     old: true,
   },
