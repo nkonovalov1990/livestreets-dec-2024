@@ -6,6 +6,11 @@ const PLANS = [
     default: true
   },
   {
+    title: "Съезды на Егоршинский",
+    map: "egorshynsky.jpg",
+    old: true,
+  },
+  {
     title: "Исходная ситуация",
     map: "plan.jpg",
     old: true,
