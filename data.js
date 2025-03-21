@@ -1,5 +1,11 @@
 const PLANS = [
   {
+    title: "Выделенки справа",
+    map: "lines-right.jpg",
+    old: true,
+    default: true
+  },
+  {
     title: "Предложения",
     map: "project.jpg",
     old: true,
